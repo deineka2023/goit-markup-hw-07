@@ -211,6 +211,15 @@ body {
   background-color: var(--three-color);
 }
 
+.header-logo-boton {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f4f4fd;
+}
 .footer-text {
   font-size: 16px;
   line-height: 1.5;

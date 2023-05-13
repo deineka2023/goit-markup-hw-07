@@ -40,7 +40,7 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #f4f4fd;
+  color: var(--three-color);
 }
 .header-list {
 }
@@ -84,7 +84,7 @@ body {
 
 /* section-one */
 .section-one {
-  background-color: var(--title-color);
+  background-color: var(--three-color);
 }
 .title {
   font-weight: 700;
@@ -131,7 +131,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--title-color);
+  color: var(--three-color);
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -156,7 +156,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--title-color);
+  color: var(--three-color);
 }
 .section-three-list {
 }

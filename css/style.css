@@ -1,10 +1,11 @@
 :root {
   --title-color: #2e2f42;
+  --first-color: #ffffff;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #434455;
+  color: var(--first-color);
 }
 
 .list {
@@ -36,7 +37,7 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #f4f4fd;
+  color: var(--title-color);
 }
 .header-list {
 }

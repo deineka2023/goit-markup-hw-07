@@ -1,11 +1,13 @@
 :root {
   --title-color: #4d5ae5;
   --first-color: #ffffff;
+  --three-color: #2e2f42;
+  --four-color: #434455;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #434455;
+  color: var(--four-color);
   background-color: var(--first-color);
 }
 
@@ -50,7 +52,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--three-color);
 }
 
 .header-link:hover,
@@ -70,7 +72,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--four-color);
 }
 
 .header-link-kontact:hover {
@@ -138,7 +140,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--four-color);
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -173,7 +175,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--three-color);
 }
 .section-four-list {
   background-color: #ffffff;
@@ -187,7 +189,7 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--three-color);
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -197,7 +199,7 @@ body {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--four-color);
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -206,7 +208,7 @@ body {
 /************************************ Footer********************************************* */
 
 .footer {
-  background-color: #2e2f42;
+  background-color: var(--three-color);
 }
 
 .footer-text {

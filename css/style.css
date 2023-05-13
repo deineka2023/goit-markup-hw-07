@@ -2,6 +2,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
 /* header */
 
 .header {
@@ -46,13 +53,11 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  width: 496px;
-  height: 120px;
-  left: 472px;
-  top: 260px;
   background-color: aqua;
 }
+
 .section-one-btn {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -82,7 +87,6 @@ body {
   flex-grow: 0;
 }
 .section-two-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -96,6 +100,13 @@ body {
 .section-three {
 }
 .section-three-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
 }
 .section-three-list {
 }
@@ -107,12 +118,36 @@ body {
 .section-four {
 }
 .section-four-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
 }
 .section-four-list {
 }
 .section-four-item {
 }
 .section-four-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 .section-four-text {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #434455;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }

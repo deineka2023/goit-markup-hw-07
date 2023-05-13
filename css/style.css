@@ -1,3 +1,7 @@
+:root {
+  --title-color: #2e2f42;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -76,7 +80,7 @@ body {
 
 /* section-one */
 .section-one {
-  background-color: #2e2f42;
+  background-color: var(--title-color);
 }
 .title {
   font-weight: 700;
@@ -123,7 +127,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--title-color);
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -148,7 +152,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--title-color);
 }
 .section-three-list {
 }

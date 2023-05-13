@@ -23,6 +23,16 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: #4d5ae5;
+}
+.header-logo-top {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2e2f42;
 }
 .header-list {
 }
@@ -44,6 +54,7 @@ body {
 
 /* kontact  */
 .header-address {
+  font-style: normal;
 }
 .header-kontact {
 }
@@ -54,6 +65,13 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.header-link-kontact:hover {
+  color: #404bbf;
+}
+.header-link-kontact:focus {
+  color: #404bbf;
 }
 
 /* section-one */
@@ -80,6 +98,14 @@ body {
   color: #ffffff;
   background-color: #4d5ae5;
   cursor: pointer;
+}
+
+.section-one-btn:hover {
+  background-color: #404bbf;
+}
+
+.section-one-btn:focus {
+  background-color: #404bbf;
 }
 
 /* section-two */
@@ -131,6 +157,7 @@ body {
 /* section-four */
 
 .section-four {
+  background-color: #f4f4fd;
 }
 .section-four-title {
   font-weight: 700;
@@ -142,6 +169,7 @@ body {
   color: #2e2f42;
 }
 .section-four-list {
+  background-color: #ffffff;
 }
 .section-four-item {
 }

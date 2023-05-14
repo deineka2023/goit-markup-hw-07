@@ -4,6 +4,7 @@
   --three-color: #2e2f42;
   --four-color: #434455;
   --six-color: #f4f4fd;
+  --seven-color: #404bbf;
 }
 
 body {
@@ -251,6 +252,16 @@ body {
   color: var(--title-color);
   background: #f4f4fd;
   cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+
+.section-btn:hover {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+.section-btn:focus {
+  color: #ffffff;
+  background-color: #404bbf;
 }
 .cards {
 }

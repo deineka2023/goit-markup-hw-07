@@ -3,6 +3,7 @@
   --first-color: #ffffff;
   --three-color: #2e2f42;
   --four-color: #434455;
+  --six-color: #f4f4fd;
 }
 
 body {
@@ -10,7 +11,16 @@ body {
   color: var(--four-color);
   background-color: var(--first-color);
 }
-
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--three-color);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
 .list {
   list-style: none;
 }
@@ -92,7 +102,7 @@ body {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--first-color);
   background-color: aqua;
 }
 
@@ -104,7 +114,7 @@ body {
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--first-color);
   background-color: #4d5ae5;
   cursor: pointer;
 }
@@ -166,7 +176,7 @@ body {
 /* section-four */
 
 .section-four {
-  background-color: #f4f4fd;
+  background-color: var(--six-color);
 }
 .section-four-title {
   font-weight: 700;
@@ -178,10 +188,10 @@ body {
   color: var(--three-color);
 }
 .section-four-list {
-  background-color: #ffffff;
+  background-color: var(--first-color);
 }
 .section-four-item {
-  background-color: #ffffff;
+  background-color: var(--first-color);
 }
 .section-four-subtitle {
   font-weight: 500;
@@ -218,11 +228,11 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #f4f4fd;
+  color: var(--six-color);
 }
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: var(--six-color);
 }

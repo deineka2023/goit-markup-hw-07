@@ -58,7 +58,6 @@ body {
 .header-item {
 }
 .header-link {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -73,7 +72,6 @@ body {
 
 /* kontact  */
 .header-address {
-  font-style: normal;
 }
 .header-kontact {
 }
@@ -98,7 +96,6 @@ body {
   background-color: var(--three-color);
 }
 .title {
-  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -160,7 +157,6 @@ body {
 .section-three {
 }
 .section-three-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -179,7 +175,6 @@ body {
   background-color: var(--six-color);
 }
 .section-four-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;

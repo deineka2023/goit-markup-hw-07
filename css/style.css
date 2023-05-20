@@ -1,3 +1,22 @@
+/*------------------------------------------------ reset-------------------------------------------- */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
+
 :root {
   --title-color: #4d5ae5;
   --first-color: #ffffff;
@@ -28,6 +47,12 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 /* header */
 

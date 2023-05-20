@@ -1,4 +1,7 @@
 /*------------------------------------------------ reset-------------------------------------------- */
+img {
+  display: block;
+}
 p,
 h1,
 h2,
@@ -53,6 +56,8 @@ body {
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
+}
+.container-new {
 }
 /* header */
 
@@ -126,6 +131,8 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--first-color);
+  padding-top: 188px;
+  padding-bottom: 292px;
 }
 
 .section-one-btn {
@@ -139,6 +146,7 @@ body {
   color: var(--first-color);
   background-color: #4d5ae5;
   cursor: pointer;
+  padding: 16px 32px;
 }
 
 .section-one-btn:hover {
@@ -151,6 +159,8 @@ body {
 
 /* section-two */
 .section-two {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .section-two-title {
 }
@@ -167,6 +177,7 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
+  margin-bottom: 8px;
 }
 .section-two-text {
   font-size: 16px;

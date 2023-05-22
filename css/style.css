@@ -336,6 +336,10 @@ body {
   max-width: 264px;
 }
 /************************************ Portfolio********************************************* */
+.contayner {
+  width: 1158px;
+}
+
 .section-portfolio {
   padding-top: 96px;
   padding-bottom: 120px;

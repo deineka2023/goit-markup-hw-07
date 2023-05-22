@@ -68,6 +68,7 @@ body {
 .header {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-navigation {
   display: flex;
@@ -86,6 +87,8 @@ body {
   margin-right: 76px;
   padding-top: 24px;
   padding-bottom: 24px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .header-logo-top {
   font-weight: 800;
@@ -96,11 +99,14 @@ body {
   text-transform: uppercase;
   color: var(--three-color);
 }
+
 .header-list {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
 .header-item {
+  padding: 24px 0 24px;
 }
 .header-link {
   font-weight: 500;
@@ -117,10 +123,12 @@ body {
 
 /* kontact  */
 .header-address {
+  margin-left: auto;
 }
 .header-kontact {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
 .header-item-kontact {
 }
@@ -141,29 +149,49 @@ body {
 /* section-one */
 .section-one {
   background-color: var(--three-color);
+  padding: 188px 0;
 }
 .title {
+  position: absolute;
+  max-width: 496px;
+  height: 120px;
   font-size: 56px;
   line-height: 1.07;
+  left: 472px;
+  top: 260px;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--first-color);
+  /* padding-left: 472px;
+
   padding-top: 188px;
-  padding-bottom: 292px;
+  padding-bottom: 292px; */
+  color: var(--first-color);
+}
+
+.container-title {
+  display: flex;
 }
 
 .section-one-btn {
   font-family: inherit;
+  min-width: 169px;
+  height: 56px;
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
   align-items: center;
   letter-spacing: 0.04em;
   color: var(--first-color);
   background-color: #4d5ae5;
   cursor: pointer;
   padding: 16px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: block;
+  border: none;
+  margin: 48px 635px 188px 636px;
 }
 
 .section-one-btn:hover {
@@ -182,8 +210,11 @@ body {
 .section-two-title {
 }
 .section-one-list {
+  display: flex;
+  gap: 24px;
 }
 .section-one-item {
+  flex-basis: 336px;
 }
 .section-two-subtitle {
   font-weight: 500;
@@ -216,8 +247,11 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--three-color);
+  margin-bottom: 72px;
 }
 .section-three-list {
+  display: flex;
+  gap: 24px;
 }
 .section-three-item {
 }
@@ -226,6 +260,8 @@ body {
 
 .section-four {
   background-color: var(--six-color);
+  margin-top: 120px;
+  padding: 120px 0;
 }
 .section-four-title {
   font-size: 36px;
@@ -234,12 +270,20 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--three-color);
+  margin-bottom: 72px;
 }
 .section-four-list {
   background-color: var(--first-color);
+  display: flex;
+  gap: 24px;
 }
 .section-four-item {
   background-color: var(--first-color);
+  flex-basis: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.container-personal {
+  padding: 32px 16px;
 }
 .section-four-subtitle {
   font-weight: 500;
@@ -251,6 +295,8 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
+  text-align: center;
+  margin-bottom: 8px;
 }
 .section-four-text {
   font-size: 16px;
@@ -260,13 +306,14 @@ body {
   color: var(--four-color);
   flex: none;
   order: 1;
-  flex-grow: 0;
+  text-align: center;
 }
 
 /************************************ Footer********************************************* */
 
 .footer {
   background-color: var(--three-color);
+  padding: 100px 0;
 }
 
 .header-logo-boton {
@@ -283,6 +330,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--six-color);
+  max-width: 264px;
 }
 /************************************ Portfolio********************************************* */
 .section {

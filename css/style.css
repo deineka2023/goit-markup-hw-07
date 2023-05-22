@@ -171,24 +171,21 @@ body {
 
 .section-one-btn {
   font-family: inherit;
-  min-width: 169px;
-  height: 56px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  display: flex;
   align-items: center;
   letter-spacing: 0.04em;
   color: var(--first-color);
-  background-color: #4d5ae5;
+  background-color: var(--title-color);
   cursor: pointer;
   padding: 16px 32px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   display: block;
+  min-width: 169px;
+  height: 56px;
   border: none;
-  margin: 48px 635px 188px 636px;
+  border-radius: 4px;
 }
 
 .section-one-btn:hover {

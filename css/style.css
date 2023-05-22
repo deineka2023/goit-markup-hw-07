@@ -57,8 +57,8 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
-.container-new {
-}
+/* .container-new {
+} */
 /* header */
 .header-container {
   display: flex;
@@ -366,12 +366,12 @@ body {
 .section-btn:hover {
   color: #ffffff;
   background-color: #404bbf;
-  border: 1px solid transparen;
+  border: 1px solid transparent;
 }
 .section-btn:focus {
   color: #ffffff;
   background-color: #404bbf;
-  border: 1px solid transparen;
+  border: 1px solid transparent;
 }
 .cards {
   display: flex;

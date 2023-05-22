@@ -169,10 +169,6 @@ body {
   color: var(--first-color);
 }
 
-.container-title {
-  display: flex;
-}
-
 .section-one-btn {
   font-family: inherit;
   min-width: 169px;
@@ -240,6 +236,7 @@ body {
 /* section-three */
 
 .section-three {
+  padding-bottom: 120px;
 }
 .section-three-title {
   font-size: 36px;

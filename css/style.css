@@ -334,6 +334,10 @@ body {
   max-width: 264px;
 }
 /************************************ Portfolio********************************************* */
+.section-portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 .section {
   display: flex;
   gap: 24px;

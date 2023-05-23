@@ -87,6 +87,7 @@ body {
   align-items: center;
   margin-right: 76px;
   display: inline-block;
+  margin-bottom: 16px;
 }
 .header-logo-top {
   font-weight: 800;
@@ -275,7 +276,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--three-color);
-  /* margin-bottom: 72px; */
+  margin-bottom: 72px;
 }
 .section-four-list {
   display: flex;

@@ -87,7 +87,6 @@ body {
   align-items: center;
   margin-right: 76px;
   display: inline-block;
-  margin-bottom: 16px;
 }
 .header-logo-top {
   font-weight: 800;
@@ -316,6 +315,9 @@ body {
 
 /************************************ Footer********************************************* */
 
+.logo-footer {
+  margin-bottom: 16px;
+}
 .footer {
   background-color: var(--three-color);
   padding: 100px 0;

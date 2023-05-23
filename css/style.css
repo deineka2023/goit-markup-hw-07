@@ -86,8 +86,6 @@ body {
   display: flex;
   align-items: center;
   margin-right: 76px;
-  padding-top: 24px;
-  padding-bottom: 24px;
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -135,6 +133,9 @@ body {
 .header-item-kontact {
 }
 .header-link-kontact {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -162,6 +163,7 @@ body {
   letter-spacing: 0.02em;
   margin: 0 auto;
   color: var(--first-color);
+  margin-bottom: 48px;
 }
 
 .section-one-btn {
@@ -274,10 +276,9 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--three-color);
-  margin-bottom: 72px;
+  /* margin-bottom: 72px; */
 }
 .section-four-list {
-  background-color: var(--first-color);
   display: flex;
   gap: 24px;
 }
@@ -348,7 +349,7 @@ body {
 .section {
   display: flex;
   gap: 24px;
-  padding: 120px 0;
+  /* padding: 120px 0; */
   justify-content: center;
   margin-bottom: 72px;
 }

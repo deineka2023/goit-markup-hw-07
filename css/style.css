@@ -439,6 +439,7 @@ body {
   margin-right: 120px;
 }
 .container-soc {
+  width: 208px;
 }
 
 .footer-container {
@@ -482,6 +483,7 @@ body {
 .footer-soc-item {
   width: 40px;
   height: 40px;
+  flex-shrink: 0;
 }
 
 .footer-soc-link {

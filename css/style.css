@@ -371,7 +371,15 @@ body {
   height: 100%;
   background: #4d5ae5;
   border-radius: 50%;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-soc-link:hover {
+  background-color: #404bbf;
+}
+.section-soc-link:focus {
+  background-color: #404bbf;
 }
 
 /*----------------------------------------------------- section-five------------------------------------------------------------ */

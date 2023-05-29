@@ -162,6 +162,7 @@ body {
   background-position: center;
   background-size: cover;
   padding: 188px 0;
+  max-width: 1440px;
 }
 .title {
   max-width: 496px;

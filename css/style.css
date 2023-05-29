@@ -240,14 +240,7 @@ body {
 .section-one-item {
   flex-basis: 336px;
 }
-/* .section-one-item::before {
-  content: "";
-  width: 264px;
-  height: 112px;
-  background: var(--six-color);
-  display: block;
-  margin-bottom: 8px;
-} */
+
 .section-two-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -305,7 +298,6 @@ body {
   margin-bottom: 72px;
 }
 .section-four-linc {
-  /* display: flex; */
   display: flex;
   gap: 24px;
   margin-top: 8px;

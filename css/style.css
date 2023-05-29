@@ -162,6 +162,7 @@ body {
   background-position: center;
   background-size: cover;
   padding: 188px 0;
+  max-width: 1440px;
 }
 .title {
   max-width: 496px;
@@ -383,6 +384,12 @@ body {
   background-color: var(--three-color);
   padding: 100px 0;
 }
+.footer-wrap {
+  display: flex;
+  align-items: baseline;
+}
+.foter-container {
+}
 
 .header-logo-boton {
   font-weight: 800;
@@ -400,42 +407,65 @@ body {
   color: var(--six-color);
   max-width: 264px;
 }
+.footer-text {
+  width: 264px;
 
-.footer-soc-text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  margin-bottom: 16px;
+  color: var(--middle-background);
 }
-.footer-soc-list {
+
+.footer {
+  padding: 100px 0;
+  background-color: var(--dark-background);
+}
+
+.footer-container {
   display: flex;
-  justify-content: left;
+  align-items: baseline;
+}
+
+.logo-container {
+  margin-right: 120px;
+}
+
+.sm-text {
+  margin-bottom: 16px;
+
+  font-weight: 500;
+
+  color: var(--white-color);
+}
+
+.sm-list {
+  display: flex;
+  align-items: center;
   gap: 16px;
 }
 
-.footer-soc-item {
+.sm-item {
   width: 40px;
   height: 40px;
 }
 
-.footer-soc-link {
+.sm-link {
   width: 100%;
   height: 100%;
-  background: #4d5ae5;
+  background-color: var(--accent-color);
   border-radius: 50%;
-  display: block;
-}
-.container-soc {
-  width: 1158px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  padding: 0 15px;
-
-  margin: 0 auto;
+  color: var(--icon-bg);
 }
+
+.sm-icon {
+  fill: currentColor;
+}
+
+.sm-link:is(:hover, :focus) {
+  background-color: var(--footer-hover);
+}
+
 /************************************ Portfolio********************************************* */
 .contayner {
   width: 1158px;

@@ -70,6 +70,8 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-navigation {
   display: flex;
@@ -151,6 +153,14 @@ body {
 /* section-one */
 .section-one {
   background-color: var(--three-color);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 188px 0;
 }
 .title {
@@ -220,6 +230,14 @@ body {
 .section-one-item {
   flex-basis: 336px;
 }
+.section-one-item::before {
+  content: "";
+  width: 264px;
+  height: 112px;
+  background: var(--six-color);
+  display: block;
+  margin-bottom: 8px;
+}
 .section-two-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -276,6 +294,20 @@ body {
   color: var(--three-color);
   margin-bottom: 72px;
 }
+.section-four-linc {
+  /* display: flex; */
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+}
+.section-four-contact {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-bottom: 8px;
+  background: var(--title-color);
+  display: inline-block;
+}
 .section-four-list {
   display: flex;
   gap: 24px;
@@ -284,6 +316,8 @@ body {
   background-color: var(--first-color);
   flex-basis: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .container-personal {
   padding: 32px 16px;
@@ -310,6 +344,24 @@ body {
   flex: none;
   order: 1;
   text-align: center;
+  margin-bottom: 8px;
+}
+.section-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.section-soc-item {
+  width: 40px;
+  height: 40px;
+}
+.section-soc-link {
+  width: 100%;
+  height: 100%;
+  background: #4d5ae5;
+  border-radius: 50%;
+  display: block;
 }
 
 /************************************ Footer********************************************* */
@@ -348,6 +400,42 @@ body {
   color: var(--six-color);
   max-width: 264px;
 }
+
+.footer-soc-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.footer-soc-list {
+  display: flex;
+  justify-content: left;
+  gap: 16px;
+}
+
+.footer-soc-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  background: #4d5ae5;
+  border-radius: 50%;
+  display: block;
+}
+.container-soc {
+  width: 1158px;
+
+  padding: 0 15px;
+
+  margin: 0 auto;
+}
 /************************************ Portfolio********************************************* */
 .contayner {
   width: 1158px;
@@ -371,12 +459,9 @@ body {
   line-height: 1.5;
   align-items: center;
   text-align: center;
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center; */
   letter-spacing: 0.04em;
   color: var(--title-color);
-  background: #f4f4fd;
+  background: var(--six-color);
   cursor: pointer;
   font-family: "Roboto", sans-serif;
   border: 1px solid #e7e9fc;
@@ -389,11 +474,15 @@ body {
   color: #ffffff;
   background-color: #404bbf;
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .section-btn:focus {
   color: #ffffff;
   background-color: #404bbf;
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .cards {
   display: flex;
@@ -401,12 +490,15 @@ body {
   column-gap: 24px;
   row-gap: 48px;
 }
-.card-item {
-}
 
 .cards-item {
   width: calc((100% - 48px) / 3);
 }
+.cards-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .container-cards {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;

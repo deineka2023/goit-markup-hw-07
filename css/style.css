@@ -491,7 +491,6 @@ body {
 .footer-soc-item {
   width: 40px;
   height: 40px;
-  flex-shrink: 0;
 }
 
 .footer-soc-link {
@@ -504,7 +503,12 @@ body {
   justify-content: center;
   color: #f4f4fd;
 }
-
+.footer-soc-link:hover {
+  background-color: #404bbf;
+}
+.footer-soc-link:focus {
+  background-color: #404bbf;
+}
 /************************************ Portfolio********************************************* */
 .contayner {
   width: 1158px;

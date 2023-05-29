@@ -427,7 +427,9 @@ body {
 }
 
 /************************************ Footer********************************************* */
-
+.section-four-icon {
+  fill: var(--six-color);
+}
 .logo-footer {
   display: inline-block;
   margin-bottom: 16px;

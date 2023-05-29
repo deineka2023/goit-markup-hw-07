@@ -217,6 +217,15 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
 
 .section-two {
   padding-top: 120px;
@@ -231,14 +240,14 @@ body {
 .section-one-item {
   flex-basis: 336px;
 }
-.section-one-item::before {
+/* .section-one-item::before {
   content: "";
   width: 264px;
   height: 112px;
   background: var(--six-color);
   display: block;
   margin-bottom: 8px;
-}
+} */
 .section-two-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -430,7 +439,6 @@ body {
   margin-right: 120px;
 }
 .container-soc {
-  width: 208px;
 }
 
 .footer-container {

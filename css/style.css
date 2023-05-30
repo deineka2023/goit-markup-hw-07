@@ -163,6 +163,7 @@ body {
   background-size: cover;
   padding: 188px 0;
   max-width: 1440px;
+  margin: 0 auto;
 }
 .title {
   max-width: 496px;

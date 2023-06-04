@@ -156,13 +156,6 @@ body {
   padding: 24px 0;
 }
 
-.header-link-kontact:hover {
-  color: #404bbf;
-}
-.header-link-kontact:focus {
-  color: #404bbf;
-}
-
 /* section-one */
 .section-one {
   background-color: var(--three-color);
@@ -209,13 +202,11 @@ body {
   border-radius: 4px;
   margin: 0 auto;
 }
-
+.header-link-kontact:focus,
+.header-link-kontact:hover,
+.section-one-btn:focus,
 .section-one-btn:hover {
-  background-color: #404bbf;
-}
-
-.section-one-btn:focus {
-  background-color: #404bbf;
+  background-color: var(--seven-color);
 }
 
 /* section-two */
@@ -570,8 +561,33 @@ body {
   column-gap: 24px;
   row-gap: 48px;
 }
+
+.portfolio-cover-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  position: absolute;
+
+  top: 0;
+  color: var(--six-color);
+  padding: 40px;
+  background-color: var(--title-color);
+  height: 100%;
+  transform: translateY(100%);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
 .card-item {
   display: block;
+  position: relative;
+}
+.card-item:hover .portfolio-cover-text {
+  transform: translateY(0);
 }
 .card-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -604,4 +620,53 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--four-color);
+}
+/***********************************************modal**************************************************************/
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(46, 47, 66, 0.4);
+  top: 0;
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+.modal {
+  width: 408px;
+  min-height: 584px;
+  background: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms linear;
+  padding: 24px;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+.modal-close {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #999;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  background-color: var(--seven-color);
+}
+.is-hidden {
+  visibility: none;
+  opacity: 0;
+  pointer-events: none;
 }

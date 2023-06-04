@@ -106,7 +106,6 @@ body {
   gap: 40px;
 }
 .header-item {
-  padding: 24px 0;
 }
 .header-link {
   font-weight: 500;
@@ -115,10 +114,23 @@ body {
   letter-spacing: 0.02em;
   color: var(--three-color);
   padding: 24px 0;
+  position: relative;
+  display: block;
+}
+.header-link.current:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 2px;
+  height: 4px;
+  background-color: #404bbf;
 }
 
 .header-link:hover,
-.header-link:focus {
+.header-link:focus,
+.header-link.current {
   color: #404bbf;
 }
 
@@ -141,6 +153,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--four-color);
+  padding: 24px 0;
 }
 
 .header-link-kontact:hover {

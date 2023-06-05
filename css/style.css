@@ -594,12 +594,12 @@ body {
   position: relative;
   overflow: hidden;
 }
-.portfolio-cover-wrap:hover {
+/* .portfolio-cover-wrap:hover {
   transform: translateY(0%);
 }
 .portfolio-cover-wrap:focus {
   transform: translateY(0%);
-}
+} */
 
 .card-item {
   display: block;

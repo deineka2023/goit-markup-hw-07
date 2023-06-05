@@ -597,6 +597,9 @@ body {
 .portfolio-cover-wrap:hover {
   transform: translateY(0%);
 }
+.portfolio-cover-wrap:focus {
+  transform: translateY(0%);
+}
 
 .card-item {
   display: block;
@@ -646,7 +649,8 @@ body {
   position: fixed;
   background: rgba(46, 47, 66, 0.4);
   top: 0;
-  transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   width: 408px;
@@ -659,28 +663,40 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms linear;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 24px;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
 .modal-close {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #999;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   display: block;
   margin-left: auto;
   display: flex;
+  position: absolute;
+  padding: 0;
+  top: 24px;
+  right: 24px;
+  background-color: #e7e9fc;
   align-items: center;
   cursor: pointer;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close:hover,
 .modal-close:focus {
   background-color: var(--seven-color);
+  border: none;
+  fill: #ffffff;
+}
+.modal-close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
   visibility: none;

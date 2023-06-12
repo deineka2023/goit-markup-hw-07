@@ -661,7 +661,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
@@ -708,7 +708,6 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 48px;
   margin-bottom: 16px;
 }
 

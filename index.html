@@ -504,13 +504,22 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <input
-            type="text"
-            name="user-name"
-            class="modal-input"
-            placeholder="імя"
-            required
-          />
+          <div class="modal-field">
+            <label for="user-name" class="input-label">Name</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="modal-input"
+                placeholder="степан"
+                required
+              />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person "></use>
+              </svg>
+            </div>
+          </div>
           <input
             type="email"
             name="user-email"
@@ -522,6 +531,8 @@
             name="user-tel"
             class="modal-input"
             placeholder="телефон"
+            pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+            title="+380 (96) 111-11-11"
             required
           />
 

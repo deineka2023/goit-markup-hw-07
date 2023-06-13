@@ -801,7 +801,7 @@ body {
 
 .button-send {
   display: block;
-  max-width: 169px;
+  min-width: 169px;
   height: 56px;
   font-weight: 500;
   line-height: 1.5;
@@ -814,7 +814,8 @@ body {
   margin-top: 24px;
   display: flex;
   align-items: center;
-  /* margin: 0 auto; */
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .label-checkbox {
@@ -825,6 +826,9 @@ body {
   color: #8e8f99;
   display: flex;
   align-items: center;
+}
+.modal-checkbox {
+  margin-bottom: 24px;
 }
 
 .check-span {
@@ -837,6 +841,13 @@ body {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+}
+.text-privacy {
+  color: #4d5ae5;
 }
 
 .input-checkbox:checked + .label-checkbox span {

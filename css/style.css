@@ -1,6 +1,9 @@
 /*------------------------------------------------ reset-------------------------------------------- */
 img {
   display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 p,
 h1,
@@ -53,8 +56,8 @@ body {
 }
 
 .container {
-  width: 1158px;
-
+  /* width: 1158px; */
+  width: 100%;
   padding: 0 15px;
 
   margin: 0 auto;
@@ -176,17 +179,21 @@ body {
   padding: 188px 0;
   max-width: 1440px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 .title {
-  max-width: 496px;
-  height: 120px;
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
+  /* Header 2 */
+  max-width: 320px;
+  font-size: 36px;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
   margin: 0 auto;
   color: var(--first-color);
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 .section-one-btn {
@@ -229,39 +236,39 @@ body {
   overflow: hidden;
 }
 .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  margin-bottom: 8px;
+  display: none;
 }
 
 .section-two {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .section-two-title {
 }
 .section-one-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+
+  gap: 72px;
 }
 .section-one-item {
-  flex-basis: 336px;
+  width: 100%;
 }
 
 .section-two-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  font-size: 36px;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
   color: var(--three-color);
   flex: none;
   order: 0;
   flex-grow: 0;
   margin-bottom: 8px;
+  text-align: center;
 }
 .section-two-text {
   font-size: 16px;

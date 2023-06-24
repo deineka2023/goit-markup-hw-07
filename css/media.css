@@ -1,6 +1,6 @@
 @media screen and (min-width: 428px) {
   .container {
-    max-width: 396px;
+    max-width: 428px;
   }
 }
 
@@ -8,6 +8,18 @@
   .container {
     max-width: 736px;
   }
+
+  /************************ header *******************************/
+  .header-list {
+    display: flex;
+  }
+  .header-kontact {
+    display: block;
+  }
+  .menu-open-btn {
+    display: none;
+  }
+
   /************************ section-one *******************************/
   .title {
     max-width: 496px;
@@ -18,10 +30,66 @@
     letter-spacing: 0.02em;
     margin-bottom: 36px;
   }
+
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-tab.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-one {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-tab-2x.jpg);
+    }
+  }
+
   /************************ section-two *******************************/
 
   .section-one-item {
     width: calc((100% - 72px) / 2);
+  }
+
+  /************************ section-four *******************************/
+  .section-four-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .section-four > .container {
+    max-width: 582px;
+  }
+
+  /************************ section-customers *******************************/
+  .customer-item {
+    width: calc((100% - 48px) / 3);
+  }
+  .list-customers {
+    row-gap: 72px;
+  }
+  .section-customers > .container {
+    max-width: 582px;
+  }
+  .footer > .container {
+    max-width: 582px;
+  }
+
+  .footer-container,
+  .logo-footer,
+  .footer-soc-text,
+  .subscribe-text {
+    justify-content: left;
+  }
+  .subscribe-label {
+    width: 264px;
   }
 }
 
@@ -29,7 +97,39 @@
   .container {
     max-width: 1158px;
   }
+  .header-kontact {
+    display: flex;
+  }
+
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-one {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-2x.jpg);
+    }
+  }
+
   /************************ section-two *******************************/
+  .section-two {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
   .section-two-subtitle {
     font-weight: 500;
     font-size: 20px;
@@ -53,5 +153,39 @@
     background-color: #f4f4fd;
     border-radius: 4px;
     margin-bottom: 8px;
+  }
+
+  /************************ section-three *******************************/
+  .section-three {
+    display: block;
+  }
+  /************************ section-four *******************************/
+  .section-four-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+  .section-four > .container {
+    max-width: 1158px;
+  }
+  /************************ section-customers *******************************/
+  .section-customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .section-customers > .container {
+    max-width: 1158px;
+  }
+  .customer-item {
+    width: calc((100% - 120px) / 6);
+  }
+  .footer > .container {
+    max-width: 1158px;
+  }
+  .footer-container-text {
+    margin-right: 120px;
+    margin-bottom: 0;
+  }
+  .container-soc {
+    margin-bottom: 0;
+    margin-right: 80px;
   }
 }

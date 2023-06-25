@@ -1,12 +1,24 @@
 @media screen and (min-width: 428px) {
   .container {
-    max-width: 428px;
+    max-width: 468px;
+  }
+  .mob-soc-list {
+    gap: 56px;
+  }
+  .mob-menu-link-kontact {
+    font-size: 36px;
+  }
+  .modal {
+    width: 408px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 736px;
+  }
+  .modal {
+    width: 408px;
   }
 
   /************************ header *******************************/
@@ -18,6 +30,12 @@
   }
   .menu-open-btn {
     display: none;
+  }
+  .header-link-kontact {
+    font-size: 12px;
+    font-family: "Roboto";
+    line-height: 1.16;
+    letter-spacing: 0.48px;
   }
 
   /************************ section-one *******************************/
@@ -96,6 +114,9 @@
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+  }
+  .modal {
+    width: 408px;
   }
   .header-kontact {
     display: flex;

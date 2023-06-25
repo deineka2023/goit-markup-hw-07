@@ -129,6 +129,11 @@ body {
   /* margin-bottom: 100px;
   margin-top: 80px; */
 }
+
+.mob-menu-link:hover,
+.mob-menu-link.current {
+  color: var(--seven-color);
+}
 .mob-menu-address {
   font-style: normal;
 }
